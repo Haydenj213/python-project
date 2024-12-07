@@ -10,4 +10,4 @@ def list_tasks():
     tasks = cursor.fetchall()
     for task in tasks:
         status = 'Completed' if task[3] else 'Pending'
-        print (f"ID: {task[0]}, Name: {task[1]}, Description: {task[2]}, Status: {status}")
+        print (f"Task Number: {task[0]}, Task Name: {task[1]}, Task Description: {task[2]}, Completed?: {status}")
